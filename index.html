@@ -150,34 +150,49 @@
 </div>
 
 <!-- Inline Style to Hide the More Projects Section -->
-<style>
-  #more-projects {
-    display: none;
-  }
-
-  #more-projects article {
-    margin-bottom: 2.5rem;
-  }
-
-  #more-projects img {
-    border-radius: 10px;
-    width: 100%;
-  }
-
-  #more-projects h3.major {
-    margin-top: 1rem;
-  }
-</style>
-
-<!-- More Projects Section -->
+<!-- More Projects Section with Embedded Styles -->
 <section id="more-projects" style="display: none;">
   <div class="inner">
     <section class="features">
+      <style>
+        #more-projects article {
+          margin-bottom: 2.5rem;
+          display: flex;
+          flex-direction: column;
+          height: 400px; /* Fixed height for all cards */
+          width: 300px; /* Fixed width for all cards */
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        #more-projects img {
+          border-radius: 10px;
+          width: 100%; /* Ensure images take full width of the card */
+          height: 200px; /* Fixed height for images */
+          object-fit: cover; /* Maintain aspect ratio while filling the space */
+        }
+
+        #more-projects h3.major {
+          margin-top: 1rem;
+          text-align: center;
+          font-size: 1.2rem;
+        }
+
+        #more-projects p {
+          text-align: center;
+          flex-grow: 1; /* Allow text to fill remaining space */
+        }
+
+        #more-projects .special {
+          display: inline-block;
+          margin-bottom: 1rem;
+        }
+      </style>
 
       <!-- Adidas Project -->
       <article>
         <a href="#" class="image" target="_blank" rel="noopener noreferrer">
-          <img src="images/Adidas logo.png" alt="" />
+          <img src="images/Adidas logo.png" alt="Adidas Sales Data Analysis" />
         </a>
         <h3 class="major">Adidas Sales Data Analysis 2021–2022</h3>
         <p>This article uncovers hidden secrets within Adidas sales data, revealing trends, profitability patterns, and regional performance to optimize sales strategies and boost revenue.</p>
@@ -187,7 +202,7 @@
       <!-- Bayliners Project -->
       <article>
         <a href="https://app.powerbi.com/links/6g0-p9w3Kr?ctid=3541b3a7-a304-44c2-84e4-3fa6469d373b&pbi_source=linkShare" class="image" target="_blank" rel="noopener noreferrer">
-          <img src="images/Store groceries.jpg" alt="" />
+          <img src="images/Store groceries.jpg" alt="Bayliners Store Analysis" />
         </a>
         <h3 class="major">Bayliners Store Analysis</h3>
         <p>BayLiners group are a large-scale retail company based in New Zealand, with its operations in various cities across the country, providing a wide range of consumer products.</p>
